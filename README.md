@@ -1,6 +1,6 @@
 # Choice Battle Items
 
-Site estático do **Choice Battle White 5.101** (Warcraft III: The Frozen Throne): banco de
+Site estático do **Choice Battle 5.101** (Warcraft III: The Frozen Throne): banco de
 itens navegável, preview da loading screen e os dados em CSV.
 
 **No ar:** <https://doomwhite.github.io/choice-battle-items/> — GitHub Pages, branch `main`,
@@ -25,8 +25,8 @@ folder **`/ (root)`**. Cada push em `main` dispara um rebuild automático
 
 ## De onde vem e como atualizar
 
-Nada aqui é editado à mão: tudo é gerado no repositório **Choice Battle White**, onde `src/`
-é a fonte da verdade.
+Nada aqui é editado à mão: tudo é gerado no repositório do mapa, onde `src/` é a fonte da
+verdade.
 
 ```
 python dev/items/pipeline.py            # regera CSV + grade + manifesto
