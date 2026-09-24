@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choice Battle White 5.101</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #0d1117; --bg-card: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-muted: #8b949e;
+  --gold: #d4a042; --accent: #58a6ff;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa; --bg-card: #ffffff; --border: #d0d7de;
+    --text: #1f2328; --text-muted: #57606a;
+    --gold: #9a6700; --accent: #0969da;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 2.5rem 1.25rem 4rem;
+  background: var(--bg); color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+.wrap { max-width: 1040px; margin: 0 auto; }
+header h1 {
+  font-family: "Exo 2", Inter, sans-serif; font-weight: 700;
+  margin: 0 0 .4rem; font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: .01em;
+}
+header h1 .ver { color: var(--gold); }
+header p { margin: 0; color: var(--text-muted); max-width: 70ch; }
+.cards {
+  display: grid; gap: 1rem; margin: 2rem 0 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.card {
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: 1.1rem 1.2rem 1.2rem; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--bg-card); color: inherit; text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.card h2 { font-family: "Exo 2", Inter, sans-serif; font-size: 1.1rem; margin: 0; }
+.card p { margin: 0; color: var(--text-muted); font-size: .92rem; }
+.card .cta { margin-top: auto; padding-top: .5rem; color: var(--accent); font-weight: 600; font-size: .9rem; }
+.card img {
+  width: 100%; height: 150px; object-fit: cover; object-position: top;
+  border-radius: 6px; border: 1px solid var(--border); margin-bottom: .35rem;
+}
+code { background: rgba(127,127,127,.18); padding: .1em .35em; border-radius: 4px; font-size: .88em; }
+footer { margin-top: 2.5rem; color: var(--text-muted); font-size: .88rem; max-width: 80ch; }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Choice Battle White <span class="ver">5.101</span></h1>
+    <p>Fork de balance do mapa <strong>Choice Battle</strong> (Choice 5.101 Rat) para
+    Warcraft III: The Frozen Throne — linhagem Vadik29 → DBFag → Rat. Ajustes de valores
+    sobre o mapa original, sem conteúdo novo.</p>
+  </header>
+
+  <main class="cards">
+    <a class="card" href="items_grid.html">
+      <h2>Item Database</h2>
+      <p>276 itens, 30 colunas, filtro por loja e por atributo, tooltips com os bônus reais.
+      Página autossuficiente: o CSV vai embutido nela.</p>
+      <span class="cta">Abrir a grade →</span>
+    </a>
+
+    <a class="card" href="artifacts/loading-screen-preview.jpg">
+      <img src="artifacts/loading-screen-preview.jpg" alt="Choice Battle White loading screen">
+      <h2>Loading Screen</h2>
+      <p>A tela de carregamento do White: caixa "CHOICE BATTLE WHITE" com o crédito
+      "Originally by: Vadik29", decodificada da textura que vai dentro do mapa.</p>
+      <span class="cta">Ver em tamanho real →</span>
+    </a>
+
+    <a class="card" href="items_database.csv" download>
+      <h2>Item data (CSV)</h2>
+      <p>Os mesmos dados da grade, para planilha ou script — extraídos das tabelas lni e do
+      <code>war3map.j</code> por <code>dev/items/pipeline.py</code>.</p>
+      <span class="cta">Baixar o CSV →</span>
+    </a>
+  </main>
+
+  <footer>
+    <p>Site estático gerado a partir do repositório <strong>Choice Battle White</strong>
+    (pasta <code>docs/</code>), servido sem processamento (<code>.nojekyll</code>). O wiki em
+    markdown — formatos, artefatos, migrações e status — fica no repositório, junto do
+    <code>README.md</code> com o changelog do White.</p>
+  </footer>
+</div>
+</body>
+</html>

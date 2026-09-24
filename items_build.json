@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-24T18:30:33.013196+00:00",
+  "src_war3map_j_size": 11707383,
+  "items_count": 276,
+  "stale_descriptions": [],
+  "csv_path": "docs/items_database.csv",
+  "sources": {
+    "src/table/item.ini": {
+      "sha256": "54183eba5edacabc0c333e756c8b05f2d4dd54643c12b8bb0b60bdfe12ff444a",
+      "bytes": 319072
+    },
+    "src/table/ability.ini": {
+      "sha256": "e9ee78f67c665b9b22db4a300880d83f1017f856a7d6ccb0367ba67d657781bb",
+      "bytes": 6606204
+    },
+    "src/table/unit.ini": {
+      "sha256": "e8f3865bb241cd5c8c33fc9abddb73955c5ca459d5e7661f0215aa7567c7c9e9",
+      "bytes": 2410923
+    },
+    "src/map/war3map.j": {
+      "sha256": "d89ad3929acd92a827cd880bee2dacaa4b741ba1cd21a46b372b5ca9707f36dd",
+      "bytes": 11707383
+    }
+  }
+}
