@@ -3,7 +3,8 @@
 Site estático do **Choice Battle White 5.101** (Warcraft III: The Frozen Throne): banco de
 itens navegável, preview da loading screen e os dados em CSV.
 
-Publicado com GitHub Pages a partir da raiz deste repositório.
+**No ar:** <https://doomwhite.github.io/choice-battle-items/> — GitHub Pages, branch `main`,
+folder `/ (root)`.
 
 ## Conteúdo
 
@@ -18,8 +19,9 @@ Publicado com GitHub Pages a partir da raiz deste repositório.
 
 ## Publicar
 
-**Settings → Pages → Build and deployment** → Source *Deploy from a branch* → Branch `main`,
-folder **`/ (root)`** → Save. O site fica em `https://<user>.github.io/choice-battle-items/`.
+Já está publicado: **Settings → Pages** → Source *Deploy from a branch* → Branch `main`,
+folder **`/ (root)`**. Cada push em `main` dispara um rebuild automático
+(<https://doomwhite.github.io/choice-battle-items/>).
 
 ## De onde vem e como atualizar
 
