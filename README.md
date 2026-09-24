@@ -1,7 +1,7 @@
 # Choice Battle Items
 
-Site estático do **Choice Battle 5.101** (Warcraft III: The Frozen Throne): banco de
-itens navegável, preview da loading screen e os dados em CSV.
+Site estático do **Choice Battle 5.101** (Warcraft III: The Frozen Throne): banco de itens
+navegável e os dados em CSV.
 
 **No ar:** <https://doomwhite.github.io/choice-battle-items/> — GitHub Pages, branch `main`,
 folder `/ (root)`.
@@ -10,10 +10,9 @@ folder `/ (root)`.
 
 | Arquivo | O que é |
 |---|---|
-| `index.html` | Página de entrada: grade de itens, preview da loading screen e download do CSV |
+| `index.html` | Página de entrada: grade de itens e download do CSV |
 | `items_grid.html` | A grade em si — autossuficiente, o CSV vai embutido nela |
 | `items_database.csv` | 276 itens × 30 colunas, extraídos das tabelas lni e do `war3map.j` |
-| `artifacts/loading-screen-preview.jpg` / `.png` | Preview da loading screen, decodificado da textura que vai dentro do `.w3x` (JPG leve para postar, PNG sem perda) |
 | `items_build.json` | Manifesto: SHA-256 e tamanho dos arquivos de `src/` que geraram o CSV |
 | `.nojekyll` | Faz o Pages servir os arquivos como estão (sem Jekyll; sem ele o `index.md` do wiki conflitaria com o `index.html`) |
 
@@ -41,8 +40,6 @@ docs/items_grid.html
 docs/items_database.csv
 docs/items_build.json
 docs/.nojekyll
-docs/artifacts/loading-screen-preview.jpg
-docs/artifacts/loading-screen-preview.png
 ```
 
 O passo a passo completo (e o motivo de não ser hospedado no Gitea) está em

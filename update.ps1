@@ -50,9 +50,7 @@ $files = @(
     'docs/items_grid.html',
     'docs/items_database.csv',
     'docs/items_build.json',
-    'docs/.nojekyll',
-    'docs/artifacts/loading-screen-preview.jpg',
-    'docs/artifacts/loading-screen-preview.png'
+    'docs/.nojekyll'
 )
 
 foreach ($rel in $files) {
